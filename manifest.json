@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Bilibili Speed Enhancer",
+    "version": "1.0",
+    "description": "Adds 3.0x, 4.0x playback speed option to Bilibili video player.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*.bilibili.com/video/*",
+          "*://*.bilibili.com/list/*"
+        ],
+        "js": [
+          "content.js"
+        ]
+      }
+    ]
+  }
